@@ -10,13 +10,6 @@ namespace sip123_2
     {
         static void Main(string[] args)
         {
-            string result = GenerateString();
-            Console.WriteLine(result);
-            string answer = Console.ReadLine();
-            if (result == answer)
-                Console.WriteLine("Все верно");
-            else
-                Console.WriteLine("Вы ошиблись");
             Console.ReadKey();
         }
         static public string GenerateString()
