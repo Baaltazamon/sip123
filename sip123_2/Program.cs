@@ -14,9 +14,9 @@ namespace sip123_2
             Console.WriteLine(result);
             string answer = Console.ReadLine();
             if (result == answer)
-                Console.WriteLine("Все верно");
+                Console.WriteLine("Все верно!");
             else
-                Console.WriteLine("Вы ошиблись");
+                Console.WriteLine("Вы ошиблись!");
             Console.ReadKey();
         }
         static public string GenerateString()
