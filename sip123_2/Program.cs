@@ -10,6 +10,12 @@ namespace sip123_2
     {
         static void Main(string[] args)
         {
+<<<<<<<<< Temporary merge branch 1
+            
+            
+            Console.ReadKey();
+        }
+=========
             string result = GenerateString();
             Console.WriteLine(result);
             string answer = Console.ReadLine();
