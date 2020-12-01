@@ -11,12 +11,29 @@ namespace sip123_2
         static void Main(string[] args)
         {
             string result = GenerateString();
+            char g;
+            bool h;
+            int trying = 0;
             Console.WriteLine(result);
-            string answer = Console.ReadLine();
-            if (result == answer)
-                Console.WriteLine("Все верно!");
-            else
-                Console.WriteLine("Вы ошиблись!");
+            foreach (var c in result)
+            {
+                do
+                {
+                    
+                    g = Console.ReadKey().KeyChar;
+                    if (g == c)
+                        h = false;
+                    else
+                    {
+                        h = true;
+                        Console.Write("\b");
+                        trying++;
+                        System.Media.SystemSounds.Beep.Play();
+                    }
+                        
+                } while (h);
+            }
+            Console.WriteLine($"\nВерно!\nОшибок сделано: {trying}.");
             Console.ReadKey();
         }
         static public string GenerateString()
